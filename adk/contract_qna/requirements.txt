@@ -1,0 +1,4 @@
+google-cloud-storage
+reportlab
+google-cloud-aiplatform
+google-adk

@@ -139,6 +139,7 @@ venv.bak/
 
 # mkdocs documentation
 /site
+adk/contract_qna/documentation/
 
 # mypy
 .mypy_cache/

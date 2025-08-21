@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Generate Contracts",
+
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/generate_sim_contracts.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--project-id",
+                "felipe-sandbox-354619",
+                "--number",
+                "2",
+                "--location",
+                "us-central1",
+                "--bucket-name",
+                "felipe-sandbox-354619-bucket",
+                "--gcs-path",
+                "contracts/land-lease-agreements"
+            ]
+        }
+    ]
+}
