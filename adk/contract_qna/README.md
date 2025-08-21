@@ -2,6 +2,25 @@
 
 This project demonstrates how to use the Agent Development Kit (ADK) to build a simple question-answering agent that can respond to queries about a set of documents. The project also includes a script to generate synthetic land lease agreements using Google's Gemini models via the Vertex AI SDK. These generated documents can then be used as the knowledge base for the Q&A agent.
 
+## Agent Evolution
+
+This project includes two agents, `agent_0` and `agent_1`, demonstrating a progression in capabilities.
+
+### Agent 0: The Foundational Q&A Agent
+
+- **File:** `agent_0/agent.py`
+- **Description:** This is the most basic version of the agent. It's designed to answer questions about a single document that is assumed to be already loaded into its context. It's a great starting point for understanding the core functionality of a Q&A agent.
+
+### Agent 1: The Advanced Document Handler
+
+- **File:** `agent_1/agent.py`
+- **Description:** This agent builds upon the foundation of `agent_0` by adding more sophisticated document handling capabilities.
+- **Key Improvements:**
+    - **Multi-Document Support:** Unlike `agent_0`, this agent can manage and reason about multiple documents.
+    - **Artifact Management:** It can save uploaded files as artifacts, allowing it to persist and manage the documents it's working with.
+    - **Disambiguation:** If a user asks a question that could apply to multiple documents, the agent will ask for clarification to ensure it provides the most accurate answer.
+    - **Dynamic Document Loading:** The agent uses an LLM to determine which document the user is referring to and loads the relevant document into its context before answering the question.
+
 ## Project Structure
 
 - `generate_sim_contracts.py`: A Python script to generate synthetic land lease agreements and upload them to Google Cloud Storage.
